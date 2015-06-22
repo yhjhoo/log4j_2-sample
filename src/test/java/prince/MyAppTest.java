@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import prince.service.MyService;
+
 /**
  * @author yhjhoo
  * @since 1.0
@@ -17,6 +19,9 @@ public class MyAppTest {
 	public void testTest() {
 		MyApp my = new MyApp();
 		my.test();
+		
+		MyService service = new MyService();
+		service.testLog();
 	}
 
 }

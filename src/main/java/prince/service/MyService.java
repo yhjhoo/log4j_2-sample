@@ -1,4 +1,4 @@
-package prince;
+package prince.service;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -6,22 +6,18 @@ import org.apache.commons.logging.LogFactory;
 /**
  * @author yhjhoo
  * @since 1.0
- * date : 3 Jan, 2015
+ * date : 22 Jun, 2015
  *
  */
 
-public class MyApp {
+public class MyService {
 	private final Log log = LogFactory.getLog(this.getClass());
 	
-	public void test(){
+	public void testLog(){
 		log.debug("debug: test");
 		
 		log.info("info: test");
 		
-		log.warn("warn: test");
-		
-		log.error("error: test");
-		
-		log.fatal("fatal: test");
+		log.trace("trace test");
 	}
 }
